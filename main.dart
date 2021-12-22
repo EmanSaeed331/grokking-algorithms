@@ -1,5 +1,6 @@
 import 'chapter_2/selecting_sort.dart';
 import 'chapter_3/recursion.dart';
+import 'chapter_3/stack.dart';
 
 void main() {
   /* binary search */
@@ -11,5 +12,8 @@ void main() {
   List<int> arr2 = selectionSort(arr);
   print(arr2);
   */
-  countdown(150);
+  /*recursion*/
+  // countdown(150);
+  /**stack + factorial */
+  dynamic k = factorial(3);
 }
