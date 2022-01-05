@@ -27,6 +27,7 @@ void check_voter(dynamic name) {
     print('Let them vote!');
   }
 }
+/* 3-Case 3 */
 
 void webSite_IpAddress(var site_name) {
   var sites = {
@@ -39,6 +40,21 @@ void webSite_IpAddress(var site_name) {
   } else {
     print('You enter a bad site name');
   }
+}
+
+/*4- case 4*/
+dynamic Cached(dynamic url) {
+  var cache = {};
+  if (cache.containsKey(url)) {
+    return cache[url];
+  } else {
+    var data = get_data_from_server(url);
+    return data;
+  }
+}
+
+dynamic get_data_from_server(dynamic data) {
+  return data;
 }
 
 void main() {
